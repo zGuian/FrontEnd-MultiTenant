@@ -1,0 +1,45 @@
+.status-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  min-width: 90px;
+}
+
+/* Cores dos Status */
+.status-completed {
+  background-color: #d1fae5;
+  /* Verde claro */
+  color: #047857;
+  /* Verde escuro */
+}
+
+.status-processing {
+  background-color: #e0e7ff;
+  /* Roxo/Azul claro */
+  color: #4338ca;
+  /* Roxo escuro */
+}
+
+.status-rejected {
+  background-color: #fee2e2;
+  /* Vermelho claro */
+  color: #b91c1c;
+  /* Vermelho escuro */
+}
+
+.status-on-hold {
+  background-color: #ffedd5;
+  /* Laranja claro */
+  color: #c2410c;
+  /* Laranja escuro */
+}
+
+.status-in-transit {
+  background-color: #fce7f3;
+  /* Rosa claro */
+  color: #be185d;
+  /* Rosa escuro */
+}

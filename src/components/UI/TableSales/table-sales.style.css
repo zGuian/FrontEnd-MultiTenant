@@ -1,0 +1,52 @@
+.table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  /* Para responsividade em telas pequenas */
+  border: 1px solid #e0e0e0;
+}
+
+.table-sales {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.thead-sale tr {
+  border-bottom: 1px solid #eee;
+}
+
+.thead-sale th {
+  text-align: left;
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tbody-sales tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.tbody-sales tr:last-child {
+  border-bottom: none;
+}
+
+.tbody-sales tr:hover {
+  background-color: #fafafa;
+}
+
+.tbody-sales td {
+  padding: 20px;
+  font-size: 14px;
+  color: #444;
+  vertical-align: middle;
+}
+
+.tbody-sales td:first-child {
+  color: #666;
+}

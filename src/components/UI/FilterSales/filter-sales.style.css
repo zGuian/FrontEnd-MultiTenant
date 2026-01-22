@@ -1,0 +1,99 @@
+.filter-bar {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  /* Altura fixa para manter o alinhamento */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  min-width: 800px;
+  /* Evita que quebre em telas muito pequenas */
+}
+
+/* --- Itens da Barra --- */
+.filter-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-right: 1px solid #eee;
+  /* A linha divisória vertical */
+  padding: 0 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  flex-grow: 1;
+  /* Distribui o espaço igualmente */
+}
+
+.filter-item:last-child {
+  border-right: none;
+  /* Remove a linha do último item */
+}
+
+.filter-item:hover {
+  background-color: #fafafa;
+}
+
+/* --- Textos e Estilos Específicos --- */
+
+/* Ícone de filtro (Funil) */
+.filter-icon-box {
+  flex-grow: 0;
+  /* Não estica */
+  width: 80px;
+}
+
+/* Texto "Filter By" */
+.filter-label {
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  justify-content: flex-start;
+  /* Alinha à esquerda */
+  padding-left: 30px;
+}
+
+/* Dropdowns (Date, Order Type, Status) */
+.dropdown-item {
+  justify-content: space-between;
+  /* Texto na esq, seta na dir */
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-item svg {
+  margin-left: 10px;
+  color: #111;
+}
+
+/* Botão Reset */
+.reset-btn {
+  color: #dc2626;
+  /* Vermelho */
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.reset-btn svg {
+  margin-right: 8px;
+  fill: transparent;
+}
+
+.reset-btn:hover {
+  background-color: #fef2f2;
+  /* Fundo vermelho bem claro ao passar o mouse */
+}
+
+/* Arredondamento dos cantos do primeiro e último item para seguir o container */
+.filter-item:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.filter-item:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

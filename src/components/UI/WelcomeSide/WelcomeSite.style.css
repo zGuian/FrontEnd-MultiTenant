@@ -1,0 +1,21 @@
+.welcome-side {
+    flex: 1;
+    background-color: #000051; /* Azul escuro sólido */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    position: relative;
+}
+
+.welcome-side h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.welcome-side h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
